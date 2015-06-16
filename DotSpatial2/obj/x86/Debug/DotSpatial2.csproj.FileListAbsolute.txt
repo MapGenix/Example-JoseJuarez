@@ -1,0 +1,4 @@
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\x86\Debug\DotSpatial2.exe.config
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\x86\Debug\DotSpatial2.Form1.resources
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\x86\Debug\DotSpatial2.Properties.Resources.resources
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\x86\Debug\DotSpatial2.csproj.GenerateResource.Cache
