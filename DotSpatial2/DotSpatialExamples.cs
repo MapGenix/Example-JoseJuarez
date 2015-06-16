@@ -15,6 +15,8 @@ namespace DotSpatial2
 	public partial class DotSpatialExamples : Form
 	{
 		string filePath;
+		string exeDir;
+
 
 		[Export("Shell",typeof(ContainerControl))]
 		private static ContainerControl Shell;
@@ -38,47 +40,47 @@ namespace DotSpatial2
 
 		protected override void OnShown(EventArgs e)
 		{
-			string exeDir = Path.GetDirectoryName(Application.StartupPath);
+			exeDir = Path.GetDirectoryName(Application.StartupPath);
 			
-			string fullPath = Path.Combine(exeDir, @"..\..\mapas\rasters\O44121a1.dem");
-			filePath = fullPath;
+			LocateColmena();
 
-			#region OperationsWithVectors
-			//OperationsWithPoints
-			//fullPath = Path.Combine(exeDir, @"..\..\mapas\Utah\Ejercicios\Centroids of Municipalities.shp");
-			//filePath = @"C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\mapas\Utah\Ejercicios\Centroids of Municipalities.shp";
-			//OperationsWithPoints(myLayer);
+			//OperationsWithVectors();
 
-			//OperationsWithLines
-			//fullPath = Path.Combine(exeDir, @"..\..\mapas\Utah\UDOTRoutes_LRS\UDOTRoutes_LRS.shp");
-			//OperationsWithLines(myLayer);
-
-			//OperationsWithPolygons
-			//fullPath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
-			//OperationsWithPolygons(myLayer);
-
-			//OperationsWithLabels
-			//fullPath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
-			//OperationsWithLabels(myLayer);
-
-			
-			//var myLayer = LoadVectorLayer(filePath); 
-
-			//LocateColmena();
-			#endregion
-			
-			OperationsWithRasters();
+			//OperationsWithRasters();
 			
 			base.OnShown(e);
 		}
 
+		private void OperationsWithVectors()
+		{
+			filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Ejercicios\Centroids of Municipalities.shp");
+			var myLayer = LoadVectorLayer(filePath); 
+			OperationsWithPoints(myLayer);
+
+			//OperationsWithLines
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\UDOTRoutes_LRS\UDOTRoutes_LRS.shp");
+			//OperationsWithLines(myLayer);
+
+			//OperationsWithPolygons
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
+			//OperationsWithPolygons(myLayer);
+
+			//OperationsWithLabels
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
+			//OperationsWithLabels(myLayer);
+
+			
+			//var myLayer = LoadVectorLayer(filePath); 
+		}
+
 		private void LocateColmena()
 		{
-			IFeatureSet border = FeatureSet.Open(@"C:\Users\josej_000\Desktop\pruebas y ejemplos\mapa colombia\Boundaries_20150602_230753.shp");
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Colombia\Boundaries_20150602_230753.shp");
+			IFeatureSet border = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\Boundaries_20150602_230753.shp"));
 			border.Projection = appManager1.Map.Projection;
 			IMapFeatureLayer mapLayer2 = appManager1.Map.Layers.Add(border);
 
-			IFeatureSet buildings = FeatureSet.Open(@"C:\Users\josej_000\Desktop\pruebas y ejemplos\mapa colombia\OpenStreetMap\buildings.shp");
+			IFeatureSet buildings = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\buildings.shp"));
 			buildings.Projection = appManager1.Map.Projection;
 			IMapFeatureLayer mapLayer = appManager1.Map.Layers.Add(buildings);
 			FilterColmena(mapLayer);
@@ -110,6 +112,7 @@ namespace DotSpatial2
 		#region OperationsWithRasters
 		private async void OperationsWithRasters()
 		{
+			filePath = Path.Combine(exeDir, @"..\..\mapas\rasters\O44121a1.dem");
 			// trying to apply async
 			this.UseWaitCursor = true;
 			IMapRasterLayer myLayer = await LoadRasterAsync(filePath);
