@@ -154,9 +154,9 @@ C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\pt-BR\DotSpatial.Symbology.Forms.resources.dll
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\zh-CN\DotSpatial.Symbology.Forms.resources.dll
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.csprojResolveAssemblyReference.cache
-C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.Form1.resources
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.Properties.Resources.resources
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.csproj.GenerateResource.Cache
 C:\Users\josej_000\Desktop\DotSpatial2\DotSpatial2\bin\Debug\DotSpatial2.exe.config
 C:\Users\josej_000\Desktop\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.exe
 C:\Users\josej_000\Desktop\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.pdb
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.DotSpatialExamples.resources
