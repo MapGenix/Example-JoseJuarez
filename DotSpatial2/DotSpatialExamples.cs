@@ -16,26 +16,20 @@ namespace DotSpatial2
 	{
 		string filePath;
 		string exeDir;
+		
 
 
 		[Export("Shell",typeof(ContainerControl))]
 		private static ContainerControl Shell;
 		public DotSpatialExamples()
 		{
-			CheckForIllegalCrossThreadCalls = false;
+			//CheckForIllegalCrossThreadCalls = false;
 			InitializeComponent();
 			if (DesignMode)
 				return;
 			Shell = this;
 			appManager1.LoadExtensions();
-		}
-
-		private IMapFeatureLayer LoadVectorLayer(string filePath)
-		{
-			IFeatureSet fs = FeatureSet.Open(filePath);
-			IMapFeatureLayer myLayer = appManager1.Map.Layers.Add(fs);
-			appManager1.Map.ZoomToMaxExtent();
-			return myLayer;
+			var context = TaskScheduler.FromCurrentSynchronizationContext();
 		}
 
 		protected override void OnShown(EventArgs e)
@@ -51,39 +45,17 @@ namespace DotSpatial2
 			base.OnShown(e);
 		}
 
-		private void OperationsWithVectors()
-		{
-			filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Ejercicios\Centroids of Municipalities.shp");
-			var myLayer = LoadVectorLayer(filePath); 
-			OperationsWithPoints(myLayer);
-
-			//OperationsWithLines
-			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\UDOTRoutes_LRS\UDOTRoutes_LRS.shp");
-			//OperationsWithLines(myLayer);
-
-			//OperationsWithPolygons
-			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
-			//OperationsWithPolygons(myLayer);
-
-			//OperationsWithLabels
-			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
-			//OperationsWithLabels(myLayer);
-
-			
-			//var myLayer = LoadVectorLayer(filePath); 
-		}
-
+		#region LocatingCoordinates
 		private void LocateColmena()
 		{
-			//filePath = Path.Combine(exeDir, @"..\..\mapas\Colombia\Boundaries_20150602_230753.shp");
 			IFeatureSet border = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\Boundaries_20150602_230753.shp"));
 			border.Projection = appManager1.Map.Projection;
-			IMapFeatureLayer mapLayer2 = appManager1.Map.Layers.Add(border);
+			IMapFeatureLayer mapLayer1 = appManager1.Map.Layers.Add(border);
 
 			IFeatureSet buildings = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\buildings.shp"));
 			buildings.Projection = appManager1.Map.Projection;
-			IMapFeatureLayer mapLayer = appManager1.Map.Layers.Add(buildings);
-			FilterColmena(mapLayer);
+			IMapFeatureLayer mapLayer2 = appManager1.Map.Layers.Add(buildings);
+			FilterColmena(mapLayer2);
 		}
 
 		private void FilterColmena(IMapFeatureLayer mapLayer)
@@ -96,7 +68,7 @@ namespace DotSpatial2
 			myCoord.Y = 6.20263;
 
 			var myPoint = new DotSpatial.Topology.Point(myCoord);
-			
+
 			IFeature myFeature = featureSet.AddFeature(myPoint);
 			featureSet.AddFeature(myFeature);
 
@@ -104,10 +76,10 @@ namespace DotSpatial2
 			pointLayer.LegendText = "Edificio Colmena";
 
 			DrawStars(pointLayer, Color.Yellow, DotSpatial.Symbology.PointShape.Star, 16);
-			
-
 			appManager1.Map.ResetBuffer();
 		}
+		
+		#endregion
 
 		#region OperationsWithRasters
 		private async void OperationsWithRasters()
@@ -135,7 +107,12 @@ namespace DotSpatial2
 
 		private Task<IMapRasterLayer> LoadRasterAsync(string filePath)
 		{
-			return Task.Factory.StartNew(() => LoadRasterLayer(filePath));
+			var context = TaskScheduler.FromCurrentSynchronizationContext();
+			var token = Task.Factory.CancellationToken;
+			return Task.Factory.StartNew(() =>
+				{ 
+					return LoadRasterLayer(filePath); 
+				}, token, TaskCreationOptions.None, context);
 		}
 
 		private IMapRasterLayer LoadRasterLayer(string filePath)
@@ -190,6 +167,36 @@ namespace DotSpatial2
 		#endregion
 
 		#region OperationsWithVectors
+		private void OperationsWithVectors()
+		{
+			filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Ejercicios\Centroids of Municipalities.shp");
+			var myLayer = LoadVectorLayer(filePath); 
+			OperationsWithPoints(myLayer);
+
+			//OperationsWithLines
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\UDOTRoutes_LRS\UDOTRoutes_LRS.shp");
+			//OperationsWithLines(myLayer);
+
+			//OperationsWithPolygons
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
+			//OperationsWithPolygons(myLayer);
+
+			//OperationsWithLabels
+			//filePath = Path.Combine(exeDir, @"..\..\mapas\Utah\Counties\Counties.shp");
+			//OperationsWithLabels(myLayer);
+
+			
+			//var myLayer = LoadVectorLayer(filePath); 
+		}
+
+		private IMapFeatureLayer LoadVectorLayer(string filePath)
+		{
+			IFeatureSet fs = FeatureSet.Open(filePath);
+			IMapFeatureLayer myLayer = appManager1.Map.Layers.Add(fs);
+			appManager1.Map.ZoomToMaxExtent();
+			return myLayer;
+		}
+
 		#region OperationsWithLines
 		private void OperationsWithLines(IMapFeatureLayer myLayer)
 		{
