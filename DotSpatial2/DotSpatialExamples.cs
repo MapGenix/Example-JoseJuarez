@@ -16,6 +16,7 @@ namespace DotSpatial2
 	{
 		string filePath;
 		string exeDir;
+		TaskScheduler context;
 		
 
 
@@ -29,14 +30,14 @@ namespace DotSpatial2
 				return;
 			Shell = this;
 			appManager1.LoadExtensions();
-			var context = TaskScheduler.FromCurrentSynchronizationContext();
+			context = TaskScheduler.FromCurrentSynchronizationContext();
 		}
 
 		protected override void OnShown(EventArgs e)
 		{
 			exeDir = Path.GetDirectoryName(Application.StartupPath);
 			
-			LocateColmena();
+			//LocateColmena();
 
 			//OperationsWithVectors();
 
@@ -48,14 +49,15 @@ namespace DotSpatial2
 		#region LocatingCoordinates
 		private void LocateColmena()
 		{
-			IFeatureSet border = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\Boundaries_20150602_230753.shp"));
-			border.Projection = appManager1.Map.Projection;
-			IMapFeatureLayer mapLayer1 = appManager1.Map.Layers.Add(border);
+			filePath = Path.Combine(Path.Combine(exeDir, @"..\mapas\Colombia\Boundaries_20150602_230753.shp"));
+			//var border = LoadVectorLayer(filePath);
+			var border = LoadVectorLayerAsync(filePath);
+			
 
-			IFeatureSet buildings = FeatureSet.Open(Path.Combine(exeDir, @"..\mapas\Colombia\buildings.shp"));
-			buildings.Projection = appManager1.Map.Projection;
-			IMapFeatureLayer mapLayer2 = appManager1.Map.Layers.Add(buildings);
-			FilterColmena(mapLayer2);
+			filePath = Path.Combine(Path.Combine(exeDir, @"..\mapas\Colombia\buildings.shp"));
+			var buildings = LoadVectorLayer(filePath);
+
+			FilterColmena(buildings);
 		}
 
 		private void FilterColmena(IMapFeatureLayer mapLayer)
@@ -189,10 +191,22 @@ namespace DotSpatial2
 			//var myLayer = LoadVectorLayer(filePath); 
 		}
 
+
+		private async Task<IMapFeatureLayer> LoadVectorLayerAsync(string filePath)
+		{
+			var token = Task.Factory.CancellationToken;
+			return await Task.Factory.StartNew(() =>
+				{ 
+					return LoadVectorLayer(filePath); 
+				}, token, TaskCreationOptions.None, context);
+		}
+
 		private IMapFeatureLayer LoadVectorLayer(string filePath)
 		{
 			IFeatureSet fs = FeatureSet.Open(filePath);
+			fs.Projection = appManager1.Map.Projection;
 			IMapFeatureLayer myLayer = appManager1.Map.Layers.Add(fs);
+			//myLayer.Projection = appManager1.Map.Projection;
 			appManager1.Map.ZoomToMaxExtent();
 			return myLayer;
 		}
