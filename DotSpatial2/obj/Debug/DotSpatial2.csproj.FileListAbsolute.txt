@@ -359,6 +359,7 @@ C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\it-IT\DotSpatial.Symbology.Forms.resources.dll
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\pt-BR\DotSpatial.Symbology.Forms.resources.dll
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\bin\Debug\zh-CN\DotSpatial.Symbology.Forms.resources.dll
+C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.csprojResolveAssemblyReference.cache
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.DotSpatialExamples.resources
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.Properties.Resources.resources
 C:\Users\josej_000\Desktop\pruebas y ejemplos\DotSpatial2\DotSpatial2\obj\Debug\DotSpatial2.csproj.GenerateResource.Cache
