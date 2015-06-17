@@ -376,17 +376,39 @@
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ClickOnceUpdater\DotSpatial.Plugins.ClickOnceUpdater.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ClickOnceUpdater\DotSpatial.Plugins.ClickOnceUpdater.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ClickOnceUpdater\Readme.txt" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\GeoAPI.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\NetTopologySuite.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\PowerCollections.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\Readme.txt" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\TomControls.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\TomControls.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\Readme.txt" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\GeoAPI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\NetTopologySuite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\PowerCollections.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\TomControls.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Contourer\TomControls.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.FindFeature\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Help\DotSpatial.Plugins.Help.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Help\DotSpatial.Plugins.Help.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Help\Readme.txt" />
@@ -396,11 +418,17 @@
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Ionic.Zip.xml" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Readme.txt" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\de-DE\DotSpatial.Plugins.Measure.resources.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.pdb" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\it-IT\DotSpatial.Plugins.Measure.resources.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\pt-BR\DotSpatial.Plugins.Measure.resources.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\Readme.txt" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Measure\zh-CN\DotSpatial.Plugins.Measure.resources.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ScriptRunner\cs\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ScriptRunner\de\DotSpatial.Plugins.ScriptRunner.resources.dll" />
@@ -429,9 +457,15 @@
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleLegend\DotSpatial.Plugins.SimpleLegend.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleLegend\DotSpatial.Plugins.SimpleLegend.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleLegend\Readme.txt" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\Readme.txt" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SimpleMap\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.SpatiaLite\Readme.txt" />
@@ -443,17 +477,29 @@
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.StatusBarImprovements\DotSpatial.Plugins.StatusBarImprovements.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.StatusBarImprovements\DotSpatial.Plugins.StatusBarImprovements.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.StatusBarImprovements\Readme.txt" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\Readme.txt" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.TableEditor\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.Port.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.Port.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.Taudem.Port\Readme.txt" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.dll" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.pdb" />
-    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\Readme.txt" />
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.ToolManager\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WebMap\BruTile.Desktop.dll" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WebMap\BruTile.Desktop.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WebMap\BruTile.dll" />
@@ -465,9 +511,15 @@
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WFSClient\DotSpatial.Plugins.WFSClient.pdb" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WFSClient\Readme.txt" />
     <Content Include="bin\Debug\Plugins\DotSpatial.Plugins.WFSClient\Renci.Data.Interop.dll" />
-    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.dll" />
-    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.pdb" />
-    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.XML" />
+    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Plugins\Tools\DotSpatial.Tools.XML">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\Plugins\Tools\zh-CN\DotSpatial.Tools.resources.dll" />
     <Content Include="bin\Debug\pt-BR\DotSpatial.Controls.resources.dll" />
     <Content Include="bin\Debug\pt-BR\DotSpatial.Projections.Forms.resources.dll" />

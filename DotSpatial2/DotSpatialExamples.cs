@@ -37,7 +37,7 @@ namespace DotSpatial2
 		{
 			exeDir = Path.GetDirectoryName(Application.StartupPath);
 			
-			//LocateColmena();
+			LocateColmena();
 
 			//OperationsWithVectors();
 
