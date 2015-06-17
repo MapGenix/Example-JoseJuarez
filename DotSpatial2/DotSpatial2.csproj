@@ -11,6 +11,8 @@
     <AssemblyName>DotSpatial2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,56 +54,73 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotSpatial.Analysis">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Analysis.dll</HintPath>
+    <Reference Include="DotSpatial.Analysis, Version=1.7.0.0, Culture=neutral, PublicKeyToken=df3f45fb0fe4cb0c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Analysis.1.7\lib\net40-Client\DotSpatial.Analysis.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Compatibility">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Compatibility.dll</HintPath>
+    <Reference Include="DotSpatial.Compatibility, Version=1.7.0.0, Culture=neutral, PublicKeyToken=094c8fdea7f4a002, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Compatibility.1.7\lib\net40-Client\DotSpatial.Compatibility.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Controls">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Controls.dll</HintPath>
+    <Reference Include="DotSpatial.Controls, Version=1.7.0.0, Culture=neutral, PublicKeyToken=4d9e49339a7d240c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Controls.1.7\lib\net40-Client\DotSpatial.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Data">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Data.dll</HintPath>
+    <Reference Include="DotSpatial.Data, Version=1.7.0.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Data.1.7\lib\net40-Client\DotSpatial.Data.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Data.Forms">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Data.Forms.dll</HintPath>
+    <Reference Include="DotSpatial.Data.Forms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=53ab5a198378d4c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Data.Forms.1.7\lib\net40-Client\DotSpatial.Data.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Extensions">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Extensions.dll</HintPath>
+    <Reference Include="DotSpatial.Extensions, Version=1.7.0.0, Culture=neutral, PublicKeyToken=4d9e49339a7d240c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Extensions.1.7\lib\net40-Client\DotSpatial.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Modeling.Forms">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Modeling.Forms.dll</HintPath>
+    <Reference Include="DotSpatial.Modeling.Forms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=712bef29a31a9354, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Modeling.Forms.1.7\lib\net40-Client\DotSpatial.Modeling.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Mono">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Mono.dll</HintPath>
+    <Reference Include="DotSpatial.Mono, Version=1.7.0.0, Culture=neutral, PublicKeyToken=425ba4de41127026, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Mono.1.7\lib\net40-Client\DotSpatial.Mono.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Positioning">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Positioning.dll</HintPath>
+    <Reference Include="DotSpatial.Positioning, Version=1.7.0.0, Culture=neutral, PublicKeyToken=f6f66d1554473068, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Positioning.1.7\lib\net40-Client\DotSpatial.Positioning.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Positioning.Design">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Positioning.Design.dll</HintPath>
+    <Reference Include="DotSpatial.Positioning.Design, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b4b0b185210c9dae, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Positioning.Design.1.7\lib\net40-Client\DotSpatial.Positioning.Design.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Positioning.Forms">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Positioning.Forms.dll</HintPath>
+    <Reference Include="DotSpatial.Positioning.Forms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a45fedac1c4cdab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Positioning.Forms.1.7\lib\net40-Client\DotSpatial.Positioning.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Projections">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Projections.dll</HintPath>
+    <Reference Include="DotSpatial.Projections, Version=1.7.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Projections.1.7\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Projections.Forms">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Projections.Forms.dll</HintPath>
+    <Reference Include="DotSpatial.Projections.Forms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=52099474f11b7ff0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Projections.Forms.1.7\lib\net40-Client\DotSpatial.Projections.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Serialization">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Serialization.dll</HintPath>
+    <Reference Include="DotSpatial.Serialization, Version=1.7.0.0, Culture=neutral, PublicKeyToken=441f200f827611e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Serialization.1.7\lib\net40-Client\DotSpatial.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Symbology">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Symbology.dll</HintPath>
+    <Reference Include="DotSpatial.Symbology, Version=1.7.0.0, Culture=neutral, PublicKeyToken=6178c08da7998387, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Symbology.1.7\lib\net40-Client\DotSpatial.Symbology.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Symbology.Forms">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Symbology.Forms.dll</HintPath>
+    <Reference Include="DotSpatial.Symbology.Forms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=0544cdeefb662382, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Symbology.Forms.1.7\lib\net40-Client\DotSpatial.Symbology.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Topology">
-      <HintPath>..\..\..\..\..\Desktop\descargas\DotSpatial_Full.1.7\DotSpatial.Topology.dll</HintPath>
+    <Reference Include="DotSpatial.Topology, Version=1.7.0.0, Culture=neutral, PublicKeyToken=a66b5e9434ca3671, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotSpatial.Topology.1.7\lib\net40-Client\DotSpatial.Topology.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -124,6 +143,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Resources\Altimeter.bmp" />
+    <Content Include="Resources\Clock.bmp" />
+    <Content Include="Resources\Compass.bmp" />
+    <Content Include="Resources\SatelliteSignalBar.bmp" />
+    <Content Include="Resources\SatelliteViewer.bmp" />
+    <Content Include="Resources\Speedometer.bmp" />
     <EmbeddedResource Include="DotSpatialExamples.resx">
       <DependentUpon>DotSpatialExamples.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,54 +161,144 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\compdcs.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\coordinate_axis.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\cubewerx_extra.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\datum_shift.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\ecw_cs.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\ellipsoid.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\epsg.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_extra.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_StatePlane_extra.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_Wisconsin_extra.wkt" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gcs.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gcs.override.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gdal_datum.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\geoccs.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gt_datum.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gt_ellips.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\header.dxf" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\nitf_spec.xsd">
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\compdcs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\coordinate_axis.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\cubewerx_extra.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\datum_shift.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\ecw_cs.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\ellipsoid.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\epsg.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_extra.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_StatePlane_extra.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\esri_Wisconsin_extra.wkt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gcs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gcs.override.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gdal_datum.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\geoccs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gt_datum.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gt_ellips.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\header.dxf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\nitf_spec.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pcs.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pcs.override.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\prime_meridian.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\projop_wparm.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57agencies.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes_aml.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes_iw.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57expectedinput.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses_aml.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses_iw.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\seed_2d.dgn" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\seed_3d.dgn" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\stateplane.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\trailer.dxf" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\unit_of_measure.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\vertcs.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\vertcs.override.csv" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\esri.extra" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\ntf_r93.gsb" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\ntv1_can.dat" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\nzgd2kgrid0005.gsb" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\other.extra" />
-    <None Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\proj_def.dat" />
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pcs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pcs.override.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\prime_meridian.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\projop_wparm.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57agencies.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes_aml.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57attributes_iw.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57expectedinput.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses_aml.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\s57objectclasses_iw.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\seed_2d.dgn">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\seed_3d.dgn">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\stateplane.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\trailer.dxf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\unit_of_measure.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\vertcs.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\vertcs.override.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\esri.extra">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\ntf_r93.gsb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\ntv1_can.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\nzgd2kgrid0005.gsb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\other.extra">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\proj_def.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
     <None Include="Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.dll.config" />
-    <None Include="Plugins\DotSpatial.Plugins.Taudem.Port\awd.cfg" />
-    <None Include="Plugins\DotSpatial.Plugins.WebMap\DotSpatial.Plugins.WebMap.dll.config" />
+    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\awd.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.WebMap\DotSpatial.Plugins.WebMap.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -204,86 +319,240 @@
     <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\DotSpatial.Data.Rasters.GdalExtension.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\DotSpatial.Data.Rasters.GdalExtension.pdb" />
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\DotSpatial.Data.Rasters.GdalExtension.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdalconst_csharp.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gdalicon.png" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoBW.svg" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoColor.svg" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoGS.svg" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\nitf_spec.xml" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pci_datum.txt" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pci_ellips.txt" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\nad.lst" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\freexl.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdal19.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdalconst_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdal_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\geos_c.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\iconv.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libcurl.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libeay32.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libexpat.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libmysql.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libpq.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\msvcp100.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\msvcr100.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\ogr_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\openjpeg.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\osr_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\cfitsio.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_BAG.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_ECW_JP2ECW.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_FITS.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_GMT.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_HDF5.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_HDF5Image.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_MrSID.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_netCDF.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\hdf5dll.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\libecwj2.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\lti_dsdk.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\netcdf.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\proj.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\spatialite.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\ssleay32.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\xerces-c_2_8.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\zlib1.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\freexl.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdal19.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdalconst_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdal_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\geos_c.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\iconv.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libcurl.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libeay32.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libexpat.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libmysql.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libpq.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\msvcp100.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\msvcr100.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\ogr_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\openjpeg.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\osr_wrap.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\cfitsio.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_BAG.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_ECW_JP2ECW.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_FITS.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_GMT.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_HDF5.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_HDF5Image.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_MrSID.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_netCDF.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\hdf5dll.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\libecwj2.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\lti_dsdk.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\netcdf.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\proj.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\spatialite.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\ssleay32.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\xerces-c_2_8.dll" />
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\zlib1.dll" />
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\gdalicon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoBW.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoColor.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\GDALLogoGS.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\nitf_spec.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pci_datum.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\data\pci_ellips.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\share\nad.lst">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\freexl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdal19.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdalconst_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\gdal_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\geos_c.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\iconv.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libcurl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libeay32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libexpat.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libmysql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\libpq.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\msvcp100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\ogr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\openjpeg.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\osr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\cfitsio.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_BAG.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_ECW_JP2ECW.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_FITS.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_GMT.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_HDF5.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_HDF5Image.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_MrSID.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\gdal_netCDF.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\hdf5dll.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\libecwj2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\lti_dsdk.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\plugins\netcdf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\proj.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\spatialite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\ssleay32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\xerces-c_2_8.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x64\zlib1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\freexl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdal19.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdalconst_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\gdal_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\geos_c.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\iconv.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libcurl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libeay32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libexpat.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libmysql.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\libpq.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\msvcp100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\msvcr100.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\ogr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\openjpeg.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\osr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\cfitsio.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_BAG.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_ECW_JP2ECW.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_FITS.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_GMT.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_HDF5.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_HDF5Image.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_MrSID.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\gdal_netCDF.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\hdf5dll.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\libecwj2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\lti_dsdk.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\plugins\netcdf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\proj.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\spatialite.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\ssleay32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\xerces-c_2_8.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal\x86\zlib1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\gdal_csharp.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -293,21 +562,33 @@
     <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\osr_csharp.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Data.Rasters.GdalExtension\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.About\DotSpatial.Plugins.About.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.About\DotSpatial.Plugins.About.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.About\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.About\DotSpatial.Plugins.About.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.About\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ClickOnceUpdater\DotSpatial.Plugins.ClickOnceUpdater.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ClickOnceUpdater\DotSpatial.Plugins.ClickOnceUpdater.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.ClickOnceUpdater\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.ClickOnceUpdater\DotSpatial.Plugins.ClickOnceUpdater.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.ClickOnceUpdater\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.Contourer\DotSpatial.Plugins.Contourer.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Contourer\GeoAPI.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -317,49 +598,77 @@
     <Content Include="Plugins\DotSpatial.Plugins.Contourer\PowerCollections.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Contourer\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.Contourer\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Contourer\TomControls.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Contourer\TomControls.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.Contourer\TomControls.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.FindFeature\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.FindFeature\DotSpatial.Plugins.FindFeature.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.FindFeature\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Help\DotSpatial.Plugins.Help.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Help\DotSpatial.Plugins.Help.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.Help\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.Help\DotSpatial.Plugins.Help.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.Help\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\DotSpatial.Plugins.MapWindowProjectFileCompatibility.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\DotSpatial.Plugins.MapWindowProjectFileCompatibility.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\DotSpatial.Plugins.MapWindowProjectFileCompatibility.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Ionic.Zip.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Ionic.Zip.xml" />
-    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Ionic.Zip.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.MapWindowProjectFileCompatibility\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Measure\de-DE\DotSpatial.Plugins.Measure.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.Measure\DotSpatial.Plugins.Measure.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Measure\it-IT\DotSpatial.Plugins.Measure.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.Measure\pt-BR\DotSpatial.Plugins.Measure.resources.dll" />
-    <Content Include="Plugins\DotSpatial.Plugins.Measure\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.Measure\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Measure\zh-CN\DotSpatial.Plugins.Measure.resources.dll" />
-    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\cs\DotSpatial.Plugins.ScriptRunner.resources.dll" />
+    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\cs\DotSpatial.Plugins.ScriptRunner.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\de\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.CSharpCodeCompletion.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.CSharpCodeCompletion.xml" />
+    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.CSharpCodeCompletion.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\DotSpatial.Plugins.ScriptRunner.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\el\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\ICSharpCode.NRefactory.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -375,98 +684,149 @@
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\MapWinUtility.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\MapWinUtility.xml" />
+    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\MapWinUtility.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\Mono.Cecil.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\nl\DotSpatial.Plugins.ScriptRunner.resources.dll" />
-    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\ro\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\th\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.ScriptRunner\vi-VN\DotSpatial.Plugins.ScriptRunner.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\DotSpatial.Plugins.ShapeEditor.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\DotSpatial.Plugins.ShapeEditor.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\DotSpatial.Plugins.ShapeEditor.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ShapeEditor\zh-CN\DotSpatial.Plugins.ShapeEditor.resources.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.SimpleLegend\DotSpatial.Plugins.SimpleLegend.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.SimpleLegend\DotSpatial.Plugins.SimpleLegend.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.SimpleLegend\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.SimpleLegend\DotSpatial.Plugins.SimpleLegend.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.SimpleLegend\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.SimpleMap\Readme.txt" />
-    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.dll">
+    <Content Include="Plugins\DotSpatial.Plugins.SimpleMap\DotSpatial.Plugins.SimpleMap.pdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.SimpleMap\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\DotSpatial.Plugins.SpatiaLite.pdb" />
     <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\Readme.txt" />
-    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\System.Data.SQLite.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\System.Data.SQLite.Linq.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\System.Data.SQLite.dll" />
+    <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\System.Data.SQLite.Linq.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\System.Data.SQLite.xml" />
     <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\x64\SQLite.Interop.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.SpatiaLite\x86\SQLite.Interop.dll" />
     <Content Include="Plugins\DotSpatial.Plugins.StatusBarImprovements\DotSpatial.Plugins.StatusBarImprovements.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.StatusBarImprovements\DotSpatial.Plugins.StatusBarImprovements.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.StatusBarImprovements\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.StatusBarImprovements\DotSpatial.Plugins.StatusBarImprovements.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.StatusBarImprovements\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.TableEditor\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.TableEditor\DotSpatial.Plugins.TableEditor.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.TableEditor\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.Port.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.Port.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\DotSpatial.Plugins.Taudem.Port.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.Taudem.Port\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.ToolManager\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.ToolManager\DotSpatial.Plugins.ToolManager.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.ToolManager\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.Desktop.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.Desktop.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.Desktop.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.pdb" />
+    <Content Include="Plugins\DotSpatial.Plugins.WebMap\BruTile.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.WebMap\DotSpatial.Plugins.WebMap.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.WebMap\DotSpatial.Plugins.WebMap.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.WebMap\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.WebMap\DotSpatial.Plugins.WebMap.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.WebMap\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.WFSClient\DotSpatial.Plugins.WFSClient.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\DotSpatial.Plugins.WFSClient\DotSpatial.Plugins.WFSClient.pdb" />
-    <Content Include="Plugins\DotSpatial.Plugins.WFSClient\Readme.txt" />
+    <Content Include="Plugins\DotSpatial.Plugins.WFSClient\DotSpatial.Plugins.WFSClient.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\DotSpatial.Plugins.WFSClient\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\DotSpatial.Plugins.WFSClient\Renci.Data.Interop.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Plugins\Tools\DotSpatial.Tools.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Plugins\Tools\DotSpatial.Tools.pdb" />
-    <Content Include="Plugins\Tools\DotSpatial.Tools.XML" />
+    <Content Include="Plugins\Tools\DotSpatial.Tools.pdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\Tools\DotSpatial.Tools.XML">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Plugins\Tools\zh-CN\DotSpatial.Tools.resources.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
